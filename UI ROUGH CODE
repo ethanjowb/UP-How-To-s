@@ -1,0 +1,105 @@
+import 'package:flutter/material.dart';
+final maroon = const Color(0xFF8A1538); // UP MAROON
+final yellow = const Color(0xFF8A1538); // UP YELLOW
+final green = const Color(0xFFFFB81C); // UP GREEN
+final spotblack = const Color(0xFF000000); // UP Spotblack
+void main() {
+  runApp(MaterialApp(
+      home: Homepage()
+  ));
+}
+
+class Homepage extends StatelessWidget{
+  @override 
+  Widget build(BuildContext context){
+    return Scaffold(
+/*      appBar: AppBar(
+        title: Text('Up How To'),
+        centerTitle: true,
+        backgroundColor: maroon,
+      ),*/
+      body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: NetworkImage("https://i.imgur.com/rqspZwt.png"),
+            fit: BoxFit.cover,
+          ),
+        ),
+        child: Column(
+        children: [
+          TextField(
+            decoration: InputDecoration(
+              labelStyle: TextStyle(
+                fontSize: 24,
+                color: Colors.black
+              ),
+              border: OutlineInputBorder()
+            ),
+          ),
+          TextField(
+            decoration: InputDecoration(
+              labelStyle: TextStyle(
+                fontSize: 24,
+                color: Colors.black
+              ),
+              border: OutlineInputBorder()
+            ),
+          ),
+          TextField(
+            decoration: InputDecoration(
+              labelStyle: TextStyle(
+                fontSize: 24,
+                color: Colors.black
+              ),
+              border: OutlineInputBorder()
+            ),
+          ),
+        ],
+        ),//TextFieldScreen(),
+      ),
+    );
+  }
+}
+
+class TextFieldScreen extends StatefulWidget{
+  @override
+  TextFieldScreenState createState() => TextFieldScreenState();
+}
+class TextFieldScreenState extends State<TextFieldScreen>{
+  @override
+  Widget build(BuildContext context){
+    return Scaffold(
+      body: Column(
+        children: [
+          TextField(
+            decoration: InputDecoration(
+              labelStyle: TextStyle(
+                fontSize: 30,
+                color: Colors.black
+              ),
+              border: OutlineInputBorder()
+            ),
+          ),
+          TextField(
+            decoration: InputDecoration(
+              labelStyle: TextStyle(
+                fontSize: 30,
+                color: Colors.black
+              ),
+              border: OutlineInputBorder()
+            ),
+          ),
+          TextField(
+            decoration: InputDecoration(
+              labelStyle: TextStyle(
+                fontSize: 30,
+                color: Colors.black
+              ),
+              border: OutlineInputBorder()
+            ),
+          ),
+        ],
+      ), 
+    );
+  } 
+}
