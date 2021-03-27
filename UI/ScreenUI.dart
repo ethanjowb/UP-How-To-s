@@ -140,7 +140,7 @@ class SignUpPageState extends State<SignUpPage> {
               value: flag,
               onChanged: (value) {
                 setState(() {
-                  //flag = value;
+                  flag = value;
                 });
               },
             ),
